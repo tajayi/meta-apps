@@ -15,7 +15,7 @@ EXTRA_OECMAKE=""
 inherit pkgconfig cmake
 
 do_configure() {
-        cmake ${S}
+        cmake -DSELFHOSTED=1 ${S}
 }
 
 do_install() {
